@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDICS MEDICS</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Body Styles */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #6dcab1, #edf7f2), url('../img/imagen_fondo.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Glass Container for the glassmorphism effect */
+        .glass-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        /* Login Box Styles */
+        .login-box {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+        }
+
+        /* Title */
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: 500;
+            color: #020202;
+            text-transform: uppercase;
+        }
+
+        /* Form Styles */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .input-container {
+            position: relative;
+        }
+
+        .input-container input {
+            width: 100%;
+            padding: 15px;
+            border-radius: 30px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.25);
+            color: #ffffff;
+            font-size: 16px;
+            outline: none;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .input-container input::placeholder {
+            color: #161616;
+        }
+
+        .input-container input:focus {
+            background-color: rgba(7, 7, 7, 0.4);
+            box-shadow: 0 0 10px 3px rgba(12, 12, 12, 0.5);
+        }
+
+        /* Options */
+        .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #050505;
+        }
+
+        .options label {
+            cursor: pointer;
+        }
+
+        .options a {
+            color: #000000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .options a:hover {
+            color: #000000;
+        }
+
+        /* Login Button */
+        .login-btn {
+            padding: 15px;
+            background-color: #4900bf;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background-color: #008080;
+            box-shadow: 0 0 15px 3px rgba(0, 191, 165, 0.7);
+        }
+
+        /* Register Link */
+        p {
+            color: #0c0c0c;
+        }
+
+        p a {
+            color: #111010;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        p a:hover {
+            color: #070707;
+        }
+        
+            /* Estilo para el contenedor de navegación */
+.navbar {
+    background-color: #e0f7fa; /* Fondo color aqua claro */
+}
+.navbar-brand {
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+        color: #00796b; /* Color verde oscuro */
+}
+.navbar-brand:hover {
+    color: #080a0a; /* Color al pasar el mouse */
+    }
+.nav-link {
+        font-family: 'Arial', sans-serif;
+        font-size: 16px;
+        color: #4509eb; /* Verde oscuro */
+            transition: color 0.3s ease-in-out;
+        }
+.nav-link:hover {
+        color: #004d40; /* Verde más oscuro al pasar el mouse */
+        }
+.navbar-toggler-icon {
+        filter: invert(50%);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="btn-group"></div>
+        <a href="index.html" class="btn btn-primary active" aria-current="page">MEDICS NATURE</a>
+        <a href="contenido.html" class="btn btn-primary">Tienda</a>
+        <a href="somos.html" class="btn btn-primary">¿Quienes somos?</a>
+        <a href="acceso.html" class="btn btn-primary">INICIAR SESION/REGISTRARSE</a>
+    </div>
+    <div class="glass-container">
+        <div class="login-box">
+            <h2>REGISTRO</h2>
+            <form action="" method="POST">
+                <div class="input-container">
+                    <input type="text" name="EMAIL O USUARIO" id="Nombres" required placeholder="Nombres">
+                </div>
+                <div class="input-container">
+                    <input type="password" name="Apellidos" id="Apellidos" required placeholder="Apellidos">
+                </div>
+                <div>
+                    <input type="text" name="Telefono" id="telefono" required placeholder="Telefono">
+                </div>
+                <button type="submit" class="login-btn">Crear Cuenta</button>
+            
+            </form>
+        </div>
+    </div>
+</body>
+</html>
